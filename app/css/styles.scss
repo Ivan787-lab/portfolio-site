@@ -26,21 +26,21 @@ $black: #0d1117;
         align-items: center;
         padding: 0 5px;
         box-sizing: border-box;
-        box-shadow: 0px 0px 6px 1px #c9d1d9;
+        box-shadow: 0 0 6px 1px #c9d1d9;
         border-radius: 12px;
-        transition: .5s all;
+        transition: 0.5s all;
         left: 48px;
 
         &:hover {
             transform: scale(1.05);
         }
-        
+
         .main__switcher-circle {
             border-radius: 50%;
             width: 40px;
             height: 40px;
             display: flex;
-            transition: .5s all;
+            transition: 0.5s all;
 
             &::after {
                 border-radius: 50%;
@@ -48,8 +48,8 @@ $black: #0d1117;
                 height: 40px;
                 display: flex;
                 align-items: center;
-                justify-content: center;    
-                transition: .5s all;
+                justify-content: center;
+                transition: 0.5s all;
             }
         }
 
@@ -57,7 +57,7 @@ $black: #0d1117;
             background: $black;
             transform: translateX(0px);
             &::after {
-                content: "🌞";
+                content: "☀️";
             }
         }
 
@@ -69,7 +69,7 @@ $black: #0d1117;
                 content: "🌙";
             }
         }
-        
+
     }
     .main__my-account {
         display: flex;
@@ -77,11 +77,13 @@ $black: #0d1117;
         align-items: center;
         height: max-content;
         min-height: 700px;
-        margin: 90px 20px 20px 20px;
+        margin: 0 20px 20px;
         width: 450px;
-        box-shadow: 0px 0px 6px 1px #c9d1d9;
+        box-shadow: 0 0 6px 1px #c9d1d9;
         border-radius: 12px;
-        transition: .5s all;
+        transition: 0.5s all;
+        position: relative;
+        top: 90px;
 
         &:hover {
             transform: scale(1.05);
@@ -110,16 +112,13 @@ $black: #0d1117;
                 border-radius: 12px;
                 color: white;
                 transform: translateY(130px);
-                transition: .5s all;
+                transition: 0.5s all;
                 cursor: pointer;
                 opacity: 0;
             }
-            
+
             .link__image {
-                width: 200px;
-/*                 background: $white;
-                border-radius: 50%;
- */            }
+                width: 200px;            }
         }
 
         .about {
@@ -129,7 +128,7 @@ $black: #0d1117;
         }
 
         .my-account__about {
-            &>* {
+            & > * {
                 margin: 5px 0;
             }
 
@@ -143,7 +142,7 @@ $black: #0d1117;
             }
 
             .about__ol {
-                &>* {
+                & > * {
                     margin: 10px 0;
                     display: flex;
                     flex-direction: column;
@@ -153,14 +152,88 @@ $black: #0d1117;
                         height: 1px;
                         background: $black;
                         align-self: center;
-                        transition: .5s all;
+                        transition: 0.5s all;
                     }
-                    
+
                     &:hover {
                         &::after {
                             width: 100%;
                         }
                     }
+                }
+            }
+        }
+    }
+    .main__my-projects {
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content;
+        min-height: 700px;
+        width: 1200px;
+        box-shadow: 0 0 6px 1px #c9d1d9;
+        border-radius: 12px;
+        transition: 0.5s all;
+        position: relative;
+        top: 90px;
+        left: 65px;
+        padding: 15px;
+        box-sizing: border-box;
+        justify-content: center;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .main__project {
+            box-shadow: 0 0 6px 1px #c9d1d9;
+            border-radius: 12px;
+            transition: 0.5s all;
+            width: 190px;
+            height: 120px;
+            margin: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $black;
+            padding: 10px;
+            box-sizing: border-box;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            .project__name-project {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    background: $black;
+                    align-self: center;
+                    transition: 0.5s all;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+            }
+            .project__type-project {
+                width: 100%;
+                overflow: hidden;
+                word-break: keep-all;
+                hyphens: auto;
+                font-weight: lighter;
+
+                .type-project__span {
+                    font-weight: normal;
+                    display: flex;
+                    text-align: left;
+                    flex-direction: column;
+    
                 }
             }
         }

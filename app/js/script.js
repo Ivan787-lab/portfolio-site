@@ -12,7 +12,7 @@ switcher.addEventListener('click', () => {
         document.querySelector('.main').style.color = "#c9d1d9"
         document.querySelector('.link__image').style.background = "#c9d1d9"
         document.querySelector('.link__image').style.borderRadius = "50%"
-
+        document.querySelector('.main__project').style.color = "#c9d1d9"
     }
 
     //добавляет светулю тему
@@ -24,6 +24,7 @@ switcher.addEventListener('click', () => {
         document.querySelector('.main').style.color = "#0d1117"
         document.querySelector('.link__image').style.background = "none"
         document.querySelector('.link__image').style.borderRadius = "0"
+        document.querySelector('.main__project').style.color = "#0d1117"
     }
 })
 
