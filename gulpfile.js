@@ -68,8 +68,11 @@ gulp.task('prebuild', async function () {
     let build_js = gulp.src('app/js/**/*.js')
         .pipe(gulp.dest('dist/js'));
 
-    var buildHtml = gulp.src('app/*.html')
+    let buildHtml = gulp.src('app/*.html')
         .pipe(gulp.dest('dist'));
+
+    let buildPages = gulp.src(['app/pages/**/*'])
+        .pipe(gulp.dest('dist/pages'))
 })
 
 gulp.task('clear', function () {
