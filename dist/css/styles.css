@@ -253,7 +253,7 @@
           background: #0d1117;
           -webkit-align-self: center;
               -ms-flex-item-align: center;
-                  align-self: center; }
+                  align-self: center; transition: .5s all;}
         .main .main__my-projects .main__project .project__name-project:hover::after {
           width: 100%; }
       .main .main__my-projects .main__project .project__type-project {
