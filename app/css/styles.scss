@@ -11,7 +11,6 @@ $black: #0d1117;
     display: flex;
     background: #F5F5F5;
     width: 100%;
-    height: 100vh;
     padding: 25px;
     box-sizing: border-box;
 
@@ -28,7 +27,6 @@ $black: #0d1117;
         box-sizing: border-box;
         box-shadow: 0 0 6px 1px #c9d1d9;
         border-radius: 12px;
-        transition: 0.5s all;
         left: 48px;
 
         &:hover {
@@ -40,7 +38,6 @@ $black: #0d1117;
             width: 40px;
             height: 40px;
             display: flex;
-            transition: 0.5s all;
 
             &::after {
                 border-radius: 50%;
@@ -49,7 +46,6 @@ $black: #0d1117;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: 0.5s all;
             }
         }
 
@@ -76,12 +72,10 @@ $black: #0d1117;
         flex-direction: column;
         align-items: center;
         height: max-content;
-        min-height: 700px;
         margin: 0 20px 20px;
         width: 450px;
         box-shadow: 0 0 6px 1px #c9d1d9;
         border-radius: 12px;
-        transition: 0.5s all;
         position: relative;
         top: 90px;
 
@@ -112,13 +106,13 @@ $black: #0d1117;
                 border-radius: 12px;
                 color: white;
                 transform: translateY(130px);
-                transition: 0.5s all;
                 cursor: pointer;
                 opacity: 0;
             }
 
             .link__image {
-                width: 200px;            }
+                width: 200px;
+            }
         }
 
         .about {
@@ -152,7 +146,6 @@ $black: #0d1117;
                         height: 1px;
                         background: $black;
                         align-self: center;
-                        transition: 0.5s all;
                     }
 
                     &:hover {
@@ -172,7 +165,6 @@ $black: #0d1117;
         width: 1200px;
         box-shadow: 0 0 6px 1px #c9d1d9;
         border-radius: 12px;
-        transition: 0.5s all;
         position: relative;
         top: 90px;
         left: 65px;
@@ -187,7 +179,6 @@ $black: #0d1117;
         .main__project {
             box-shadow: 0 0 6px 1px #c9d1d9;
             border-radius: 12px;
-            transition: 0.5s all;
             width: 190px;
             height: 120px;
             margin: 20px;
@@ -211,7 +202,6 @@ $black: #0d1117;
                     height: 1px;
                     background: $black;
                     align-self: center;
-                    transition: 0.5s all;
                 }
 
                 &:hover {
@@ -233,9 +223,158 @@ $black: #0d1117;
                     display: flex;
                     text-align: left;
                     flex-direction: column;
-    
+
                 }
             }
+        }
+    }
+}
+
+
+@media(max-width: 1440px) {
+    .main {
+        padding: 0;
+        .main__switcher {
+            position: absolute;
+            align-self: center;
+            margin-top: 10px;
+            top: 30px;
+            left: 50px;
+        }
+        .main__my-account {
+            width: 650px;
+            margin: 50px 0 0 45px;
+        }
+        .main__my-projects {
+            width: 650px;
+            margin-top: 50px;
+            align-self: center;
+            left: 50px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .main {
+        padding: 0;
+        flex-direction: column;
+        .main__switcher {
+            position: relative;
+            align-self: center;
+            margin-top: 10px;
+            top: 30px;
+            left: 0;
+        }
+        .main__my-account {
+            width: 1004px;
+            align-self: center;
+            margin: 0;
+        }
+        .main__my-projects {
+            width: 1004px;
+            margin-top: 50px;
+            align-self: center;
+            left: 0;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .main {
+        padding: 0;
+        flex-direction: column;
+        .main__switcher {
+            position: relative;
+            align-self: center;
+            margin-top: 10px;
+            top: 30px;
+            left: 0;
+        }
+        .main__my-account {
+            width: 748px;
+            align-self: center;
+            margin: 0;
+        }
+        .main__my-projects {
+            width: 748px;
+            margin-top: 50px;
+            align-self: center;
+            left: 0;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .main {
+        padding: 0;
+        flex-direction: column;
+        .main__switcher {
+            position: relative;
+            align-self: center;
+            margin-top: 10px;
+            top: 30px;
+            left: 0;
+        }
+        .main__my-account {
+            width: 405px;
+            align-self: center;
+            margin: 0;
+        }
+        .main__my-projects {
+            width: 405px;
+            margin-top: 50px;
+            align-self: center;
+            left: 0;
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .main {
+        padding: 0;
+        flex-direction: column;
+        .main__switcher {
+            position: relative;
+            align-self: center;
+            margin-top: 10px;
+            top: 30px;
+            left: 0;
+        }
+        .main__my-account {
+            width: 355px;
+            align-self: center;
+            margin: 0;
+        }
+        .main__my-projects {
+            width: 355px;
+            margin-top: 50px;
+            align-self: center;
+            left: 0;
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .main {
+        padding: 0;
+        flex-direction: column;
+        .main__switcher {
+            position: relative;
+            align-self: center;
+            margin-top: 10px;
+            top: 30px;
+            left: 0;
+        }
+        .main__my-account {
+            width: 300px;
+            align-self: center;
+            margin: 0;
+        }
+        .main__my-projects {
+            width: 300px;
+            margin-top: 50px;
+            align-self: center;
+            left: 0;
         }
     }
 }

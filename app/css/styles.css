@@ -11,7 +11,6 @@
   display: flex;
   background: #F5F5F5;
   width: 100%;
-  height: 100vh;
   padding: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -36,9 +35,6 @@
     -webkit-box-shadow: 0 0 6px 1px #c9d1d9;
             box-shadow: 0 0 6px 1px #c9d1d9;
     border-radius: 12px;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
     left: 48px; }
     .main .main__switcher:hover {
       -webkit-transform: scale(1.05);
@@ -51,10 +47,7 @@
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-transition: 0.5s all;
-      -o-transition: 0.5s all;
-      transition: 0.5s all; }
+      display: flex; }
       .main .main__switcher .main__switcher-circle::after {
         border-radius: 50%;
         width: 40px;
@@ -70,10 +63,7 @@
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-transition: 0.5s all;
-        -o-transition: 0.5s all;
-        transition: 0.5s all; }
+                justify-content: center; }
     .main .main__switcher .main__switcher-circle_dark {
       background: #0d1117;
       -webkit-transform: translateX(0px);
@@ -105,15 +95,11 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    min-height: 700px;
     margin: 0 20px 20px;
     width: 450px;
     -webkit-box-shadow: 0 0 6px 1px #c9d1d9;
             box-shadow: 0 0 6px 1px #c9d1d9;
     border-radius: 12px;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
     position: relative;
     top: 90px; }
     .main .main__my-account:hover {
@@ -153,9 +139,6 @@
         -webkit-transform: translateY(130px);
             -ms-transform: translateY(130px);
                 transform: translateY(130px);
-        -webkit-transition: 0.5s all;
-        -o-transition: 0.5s all;
-        transition: 0.5s all;
         cursor: pointer;
         opacity: 0; }
       .main .main__my-account .my-account__link .link__image {
@@ -196,10 +179,7 @@
         background: #0d1117;
         -webkit-align-self: center;
             -ms-flex-item-align: center;
-                align-self: center;
-        -webkit-transition: 0.5s all;
-        -o-transition: 0.5s all;
-        transition: 0.5s all; }
+                align-self: center; }
       .main .main__my-account .my-account__about .about__ol > *:hover::after {
         width: 100%; }
   .main .main__my-projects {
@@ -218,9 +198,6 @@
     -webkit-box-shadow: 0 0 6px 1px #c9d1d9;
             box-shadow: 0 0 6px 1px #c9d1d9;
     border-radius: 12px;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    transition: 0.5s all;
     position: relative;
     top: 90px;
     left: 65px;
@@ -239,9 +216,6 @@
       -webkit-box-shadow: 0 0 6px 1px #c9d1d9;
               box-shadow: 0 0 6px 1px #c9d1d9;
       border-radius: 12px;
-      -webkit-transition: 0.5s all;
-      -o-transition: 0.5s all;
-      transition: 0.5s all;
       width: 190px;
       height: 120px;
       margin: 20px;
@@ -273,10 +247,7 @@
           background: #0d1117;
           -webkit-align-self: center;
               -ms-flex-item-align: center;
-                  align-self: center;
-          -webkit-transition: 0.5s all;
-          -o-transition: 0.5s all;
-          transition: 0.5s all; }
+                  align-self: center; }
         .main .main__my-projects .main__project .project__name-project:hover::after {
           width: 100%; }
       .main .main__my-projects .main__project .project__type-project {
@@ -299,3 +270,175 @@
           -webkit-flex-direction: column;
               -ms-flex-direction: column;
                   flex-direction: column; }
+
+@media (max-width: 1440px) {
+  .main {
+    padding: 0; }
+    .main .main__switcher {
+      position: absolute;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 10px;
+      top: 30px;
+      left: 50px; }
+    .main .main__my-account {
+      width: 650px;
+      margin: 50px 0 0 45px; }
+    .main .main__my-projects {
+      width: 650px;
+      margin-top: 50px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      left: 50px; } }
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main .main__switcher {
+      position: relative;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 10px;
+      top: 30px;
+      left: 0; }
+    .main .main__my-account {
+      width: 1004px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin: 0; }
+    .main .main__my-projects {
+      width: 1004px;
+      margin-top: 50px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      left: 0; } }
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main .main__switcher {
+      position: relative;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 10px;
+      top: 30px;
+      left: 0; }
+    .main .main__my-account {
+      width: 748px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin: 0; }
+    .main .main__my-projects {
+      width: 748px;
+      margin-top: 50px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      left: 0; } }
+
+@media (max-width: 425px) {
+  .main {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main .main__switcher {
+      position: relative;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 10px;
+      top: 30px;
+      left: 0; }
+    .main .main__my-account {
+      width: 405px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin: 0; }
+    .main .main__my-projects {
+      width: 405px;
+      margin-top: 50px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      left: 0; } }
+
+@media (max-width: 375px) {
+  .main {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main .main__switcher {
+      position: relative;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 10px;
+      top: 30px;
+      left: 0; }
+    .main .main__my-account {
+      width: 355px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin: 0; }
+    .main .main__my-projects {
+      width: 355px;
+      margin-top: 50px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      left: 0; } }
+
+@media (max-width: 320px) {
+  .main {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main .main__switcher {
+      position: relative;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 10px;
+      top: 30px;
+      left: 0; }
+    .main .main__my-account {
+      width: 300px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin: 0; }
+    .main .main__my-projects {
+      width: 300px;
+      margin-top: 50px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      left: 0; } }
