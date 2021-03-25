@@ -2,7 +2,7 @@
     "name": "Мое портфолио",
     "short_name": "Мои проекты",
     "lang": "ru-RU",
-    "start_url": "freelancer-portfolio.ru/",
+    "start_url": "http://freelancer-portfolio.ru",
     "display": "browser",
     "theme_color": "#FFFFFF",
     "icons": [
