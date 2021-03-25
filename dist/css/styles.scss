@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    transition: 0.3s all;
+    transition: 0.5s all;
 }
 
 $white: #c9d1d9;
@@ -39,6 +39,7 @@ $black: #0d1117;
             width: 40px;
             height: 40px;
             display: flex;
+            
 
             &::after {
                 border-radius: 50%;
@@ -140,6 +141,7 @@ $black: #0d1117;
                 & > * {
                     margin: 10px 0;
                     display: flex;
+                    transition: 0.5s all;
                     flex-direction: column;
                     &::after {
                         content: "";

@@ -182,8 +182,11 @@
         background: #0d1117;
         -webkit-align-self: center;
             -ms-flex-item-align: center;
-                align-self: center; }
-      .main .main__my-account .my-account__about .about__ol > *:hover::after {
+                align-self: center;
+               }
+      .main .main__my-account .my-account__about .about__ol > *:hover::after
+       {
+        transition: 0.5s all;
         width: 100%; }
   .main .main__my-projects {
     display: -webkit-box;
