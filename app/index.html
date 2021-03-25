@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="https://img.icons8.com/officel/2x/person-male.png">
+    <link rel="shortcut icon"
+        href="https://o.remove.bg/downloads/b5357dc2-3a3e-4f0e-98b2-b1fe09ae6024/icon-removebg-preview.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
@@ -23,22 +24,47 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="msapplication-starturl" content="freelancer-portfolio.ru/">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image" sizes="192x192" href="https://img.icons8.com/officel/2x/person-male.png">
-    <link rel="apple-touch-icon" type="image" sizes="192x192" href="https://img.icons8.com/officel/2x/person-male.png">
+    <link rel="icon" type="image" sizes="192x192"
+        href="https://o.remove.bg/downloads/b5357dc2-3a3e-4f0e-98b2-b1fe09ae6024/icon-removebg-preview.png">
+    <link rel="apple-touch-icon" type="image" sizes="192x192"
+        href="https://o.remove.bg/downloads/b5357dc2-3a3e-4f0e-98b2-b1fe09ae6024/icon-removebg-preview.png">
     <title>Мое портфолио</title>
 </head>
 
-<body>
-    <main>
-        <header class="main__header">
-            <video class="header__video-bg" autoplay="true" loop="true" muted src="img/bg-for-header.mp4"></video>
-            <h1 class="header__h1">Приветствую Вас на своем сайте-портфолио</h1>
-            <button class="header__scroll-to-content">Смотреть работы <i class="fas fa-level-down-alt"></i></button>
-            <a class="header__link-to-my-account" target="_blank"
-                href="https://freelancehunt.com/freelancer/Ivan__Ulanovskij.html"><img src="img/freelancehunt-logo.png"
-                    title="Ссылка на мой freelancehunt аккаунт" alt="логотип freelancehunt"></a>
-        </header>
-    </main>
+<body class="main">
+    <div class="main__switcher">
+        <div class="main__switcher-circle main__switcher-circle_dark"></div>
+    </div>
+    <div class="main__my-account">
+        <a class="my-account__link" target="_blank" href="https://freelancehunt.com/freelancer/Ivan__Ulanovskij.html">
+            <p class="link__tooltip">Постоянная ссылка на мой аккаунт в github <i class="fas fa-arrow-down"></i>
+            </p>
+            <img src="img/github.png" class="link__image"></img>
+        </a>
+
+        <div class="my-account__about about">
+            <h2 class="about__h2">О себе:</h2>
+            <p class="about__p"> Меня зовут Иван , я занимаюсь и изучаю Front End уже около года. <br> Я умею: </p>
+            <ol class="about__ol">
+                <li>Натягивать готовый сайт на CMS WordPress</li>
+                <li>Умею пользоваться Git</li>
+                <li>В проектах использую сборщик Gulp и Scss препоцессор</li>
+                <li>
+                    Также использую gulp-sass , browser-sync , gulp-imagemin , imagemin-pngquant , gulp-cache ,
+                    gulp-autoprefixer
+                </li>
+                <li>
+                    Умею и люблю делать адаптивные сайты
+                </li>
+                <li>
+                    В проектах использую БЭМ методологию названия классов
+                </li>
+                <li>
+                    Хорошо знаю JavasScript, в данный момент изучаю React
+                </li>
+            </ol>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
